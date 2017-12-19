@@ -28,19 +28,27 @@ public class PersonRepositoryTest {
 	private IPersonRepository iPersonRepository;
 	
 	@Test
+	public void findOneTest() {
+		Person person = iPersonRepository.save(PersonSeeder.getInstance());
+		log.info("Finding a person with an id of " + person.getId());
+		Assert.notNull(iPersonRepository.findOne(person.getId()));
+	}
+	
+	@Test
 	public void findAllTest() {
 		log.info("Finding all objects");
-		log.info("All Person objects: " + iPersonRepository.findAll());
+		iPersonRepository.save(PersonSeeder.getInstance());
+		Assert.notEmpty(IterableUtils.toList(iPersonRepository.findAll()));
 	}
 	
 	@Test
 	public void saveTest() {
 		log.info("Saving a new Person");
-		iPersonRepository.save(PersonSeeder.getInstance());
+		Person person = iPersonRepository.save(PersonSeeder.getInstance());
 		log.info("Looking up saved person");
-		Iterable<Person> personIterable = iPersonRepository.findAll();
-		Assert.notEmpty(IterableUtils.toList(personIterable));
-		log.info(String.format("Found %d people", IterableUtils.toList(personIterable).size()));
+		Person personLookup = iPersonRepository.findOne(person.getId());
+		Assert.notNull(person);
+		Assert.isTrue(person.getId().equals(personLookup.getId()));
 		log.info("Saving complete");
 	}
 	
@@ -61,6 +69,7 @@ public class PersonRepositoryTest {
 	public void deleteTest() {
 		log.info("Deleting an existing record");
 		Person person = iPersonRepository.save(PersonSeeder.getInstance());
+		Assert.notNull(person);
 		long startCount = iPersonRepository.count();
 		Assert.notNull(person);
 		iPersonRepository.delete(person.getId());

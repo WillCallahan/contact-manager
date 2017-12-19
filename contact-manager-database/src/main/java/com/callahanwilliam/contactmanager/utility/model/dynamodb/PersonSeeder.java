@@ -4,8 +4,6 @@ import com.callahanwilliam.contactmanager.model.dynamodb.Address;
 import com.callahanwilliam.contactmanager.model.dynamodb.Person;
 import com.callahanwilliam.contactmanager.model.dynamodb.Phone;
 import com.callahanwilliam.contactmanager.model.enumeration.PhoneType;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.ArrayList;
 
@@ -19,13 +17,15 @@ public class PersonSeeder {
 		person.setFirstName("william");
 		person.setLastName("callahan");
 		person.setPrimaryEmail("callahan043@connect.wcsu.edu");
-		person.setSecondaryEmail("callahanwilliam@callahanwilliam.com");
+		person.setSecondaryEmailList(new ArrayList<>());
+		person.getSecondaryEmailList().add("callahanwilliam@callahanwilliam.com");
 		Address address = new Address();
 		address.setStreet("A Street");
 		address.setCity("A Town Somewhere");
 		address.setState("Connecticut");
 		address.setPostalCode("06812");
-		person.setAddress(address);
+		person.setAddressList(new ArrayList<>());
+		person.getAddressList().add(address);
 		Phone phone = new Phone();
 		phone.setPhoneNumber("012-345-6789");
 		phone.setPhoneType(PhoneType.ANDROID);

@@ -6,7 +6,6 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import java.util.List;
-import java.util.Set;
 
 @DynamoDBTable(tableName = "contact_manager")
 public class Person {
@@ -21,9 +20,9 @@ public class Person {
 	
 	private String primaryEmail;
 	
-	private String secondaryEmail;
+	private List<String> secondaryEmailList;
 	
-	private Address address;
+	private List<Address> addressList;
 	
 	private List<Phone> phoneList;
 	
@@ -63,21 +62,22 @@ public class Person {
 		this.primaryEmail = primaryEmail;
 	}
 	
-	public String getSecondaryEmail() {
-		return secondaryEmail;
+	@DynamoDBAttribute(attributeName = "secondary_emails")
+	public List<String> getSecondaryEmailList() {
+		return secondaryEmailList;
 	}
 	
-	public void setSecondaryEmail(String secondaryEmail) {
-		this.secondaryEmail = secondaryEmail;
+	public void setSecondaryEmailList(List<String> secondaryEmailList) {
+		this.secondaryEmailList = secondaryEmailList;
 	}
 	
-	@DynamoDBAttribute(attributeName = "address")
-	public Address getAddress() {
-		return address;
+	@DynamoDBAttribute(attributeName = "addresses")
+	public List<Address> getAddressList() {
+		return addressList;
 	}
 	
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setAddressList(List<Address> addressList) {
+		this.addressList = addressList;
 	}
 	
 	@DynamoDBAttribute(attributeName = "phone_numbers")
