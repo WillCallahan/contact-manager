@@ -15,18 +15,6 @@
 
 		<!-- region AWS Dependencies -->
 
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk-dynamodb</artifactId>
-			<version>${com.amazonaws.dynamodo}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-lambda-java-log4j</artifactId>
-			<version>${com.amazonaws.log4j}</version>
-		</dependency>
-
 		<!-- endregion -->
 
 	</dependencies>

@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="contact-manager" />
         <module name="contact-manager-api" />
         <module name="contact-manager-common" />
         <module name="contact-manager-database" />

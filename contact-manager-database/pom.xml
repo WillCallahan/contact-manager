@@ -39,6 +39,12 @@
 			<version>${spring.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${com.jackson}</version>
+		</dependency>
+
 		<!-- endregion -->
 
 		<!-- region Project Dependencies -->
