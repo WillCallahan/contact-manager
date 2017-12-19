@@ -1,5 +1,6 @@
 package com.callahanwilliam.contactmanager.controller;
 
+import com.callahanwilliam.contactmanager.model.dynamodb.Person;
 import org.springframework.hateoas.Resource;
 
 /**
@@ -23,7 +24,7 @@ public interface IResourceCrudController<T, ID> {
 	 * @param id Id to search by
 	 * @return Matching object
 	 */
-	Resource<T> findOne(ID id);
+	Resource<Person> findOne(ID id);
 	
 	/**
 	 * Creates a new instance of an object
