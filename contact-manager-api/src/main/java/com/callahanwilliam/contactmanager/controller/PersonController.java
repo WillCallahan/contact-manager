@@ -3,10 +3,15 @@ package com.callahanwilliam.contactmanager.controller;
 import com.callahanwilliam.contactmanager.model.dynamodb.Person;
 import com.callahanwilliam.contactmanager.repository.dynamodb.IPersonRepository;
 import com.callahanwilliam.contactmanager.utility.ListUtility;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.xml.ws.Response;
 
 /**
  * Controller for the {@link Person} DMO
@@ -14,6 +19,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/persons")
 public class PersonController implements IPersonController {
+	
+	private final Log log = LogFactory.getLog(this.getClass());
 	
 	private final IPersonRepository iPersonRepository;
 	
@@ -37,6 +44,7 @@ public class PersonController implements IPersonController {
 	@RequestMapping(method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	public Iterable findAll() {
+		log.info("Getting all persons");
 		return ListUtility.encapsulateObjects(iPersonRepository.findAll(), Resource.class);
 	}
 	
@@ -63,10 +71,8 @@ public class PersonController implements IPersonController {
 	 * {@inheritDoc}
 	 */
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-	@ResponseStatus(HttpStatus.NO_CONTENT)
-	public Resource<Void> delete(@PathVariable("id") String id) {
+	public void delete(@PathVariable("id") String id) {
 		iPersonRepository.delete(id);
-		return new Resource<>(null);
 	}
 	
 }

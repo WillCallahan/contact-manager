@@ -19,12 +19,14 @@ public class LambdaHandler implements RequestHandler<AwsProxyRequest, AwsProxyRe
 	
 	@Override
 	public AwsProxyResponse handleRequest(AwsProxyRequest awsProxyRequest, Context context) {
+		log.info("Handling Request " + awsProxyRequest.getPath());
 		configureHandler();
 		return handler.proxy(awsProxyRequest, context);
 	}
 	
 	private void configureHandler() {
 		try {
+			log.debug("Configuring the Spring Request handler");
 			handler = SpringLambdaContainerHandler.getAwsProxyHandler(SpringConfiguration.class);
 		} catch (ContainerInitializationException e) {
 			log.fatal("Unable to configure Request Handler", e);

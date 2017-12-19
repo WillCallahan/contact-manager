@@ -1,1 +1,2 @@
 # Created by .ignore support plugin (hsz.mobi)
+/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/configuration/DynamoDbConfiguration.java

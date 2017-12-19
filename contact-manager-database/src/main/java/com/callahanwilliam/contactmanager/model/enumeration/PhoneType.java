@@ -1,11 +1,13 @@
 package com.callahanwilliam.contactmanager.model.enumeration;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
  * Used to provide the type of phone that a {@link com.callahanwilliam.contactmanager.model.dynamodb.Phone} represents.
  */
-@JsonFormat(shape = JsonFormat.Shape.OBJECT)
+//@JsonFormat(shape = JsonFormat.Shape.NUMBER)
 public enum PhoneType {
 	
 	MOBILE(0, "Mobile"), LANDING(1, "Landing"), FAX(2, "FAX"), ANDROID(3, "Android"), IPHONE(1, "iPhone");
@@ -19,6 +21,7 @@ public enum PhoneType {
 		this.name = name;
 	}
 	
+	@JsonValue
 	public int getType() {
 		return type;
 	}
@@ -27,6 +30,7 @@ public enum PhoneType {
 		return name;
 	}
 	
+	@JsonCreator
 	public static PhoneType getPhoneType(int type) {
 		for (int i = 0; i < PhoneType.values().length; i++) {
 			if (PhoneType.values()[i].getType() == type)

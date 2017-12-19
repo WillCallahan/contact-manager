@@ -5,7 +5,7 @@ import org.springframework.hateoas.Resource;
 /**
  * Defines standard methods for models of the application that follow HATEOAS resource standards
  *
- * @param <T> Type being accessed by the API
+ * @param <T>  Type being accessed by the API
  * @param <ID> Type of the primary key of the object being accessed by the API
  */
 public interface IResourceCrudController<T, ID> {
@@ -36,7 +36,7 @@ public interface IResourceCrudController<T, ID> {
 	/**
 	 * Updates an existing object
 	 *
-	 * @param id Id of the object to update
+	 * @param id   Id of the object to update
 	 * @param type Object to update
 	 * @return Updated object
 	 */
@@ -46,8 +46,7 @@ public interface IResourceCrudController<T, ID> {
 	 * Deletes an object
 	 *
 	 * @param id Id of the object to delete
-	 * @return Deleted object
 	 */
-	Resource<Void> delete(ID id);
+	void delete(ID id);
 	
 }
