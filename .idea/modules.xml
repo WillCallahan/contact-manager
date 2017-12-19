@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/contact-manager.iml" filepath="$PROJECT_DIR$/contact-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contact-manager-api/contact-manager-api.iml" filepath="$PROJECT_DIR$/contact-manager-api/contact-manager-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contact-manager-common/contact-manager-common.iml" filepath="$PROJECT_DIR$/contact-manager-common/contact-manager-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contact-manager-database/contact-manager-database.iml" filepath="$PROJECT_DIR$/contact-manager-database/contact-manager-database.iml" />
+    </modules>
+  </component>
+</project>

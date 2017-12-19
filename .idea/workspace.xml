@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37e2c373-50cb-4480-9685-543cae65997d" name="Default" comment="Support for CRUD operations on available DMO through repositories and the API">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_core_1_11_34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dynamodb_1_11_34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kms_1_11_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kms_1_11_34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_s3_1_11_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_s3_1_11_34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_lambda_java_core_1_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_lambda_java_log4j_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_jmespath_java_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_derjust_spring_data_dynamodb_4_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_0_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_assert_0_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_23_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_23_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_23_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_23_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_23_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_2_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lambadaframework_jax_rs_extractor_0_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lambadaframework_runtime_0_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_25.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_10_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_21_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/contact-manager-api.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IPersonController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-common/contact-manager-common.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-common/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ListUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ReflectionUtility.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-common/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-common/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/contact-manager-database.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/configuration/DynamoDbConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Address.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Person.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Phone.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/enumeration/PhoneType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/repository/dynamodb/IPersonRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/configuration/DatabaseConfigurationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/IPersonRepositoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager-database/src/test/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact-manager.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/contact-manager-common/target/" />
+    <ignored path="$PROJECT_DIR$/contact-manager-api/target/" />
+    <ignored path="$PROJECT_DIR$/contact-manager-database/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/contact-manager-common/src/main/resources/application.properties">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="0">
+                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/pom.xml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="532">
+                    <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="PersonController.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="969">
+                    <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="SpringConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IResourceCrudController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IPersonRepositoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/IPersonRepositoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonControllerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IPersonController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IPersonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Void.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Void.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IPersonRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/repository/dynamodb/IPersonRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ListUtility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectionUtility.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ReflectionUtility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#764#794#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>aws-lambda-java-core</find>
+      <find>boot</find>
+      <find>test</find>
+      <find>UUID</find>
+      <find>hateoas</find>
+      <find>modules</find>
+      <find>depen</find>
+      <find>IPersonRepository</find>
+      <find>spring-web</find>
+      <find>204</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/contact-manager-common/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/Person.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/Phone.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dmo/Address.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dmo/Phone.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dmo/Person.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/repository/dynamodb/AddressRepository.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/repository/dynamodb/PersonRepository.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/PersonRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/configuration/DynamoDbConfiguration.java" />
+        <option value="$PROJECT_DIR$/contact-manager-common/pom.xml" />
+        <option value="$PROJECT_DIR$/contact-manager-api/pom.xml" />
+        <option value="$PROJECT_DIR$/contact-manager-database/pom.xml" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/contact-manager-common/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/configuration/DatabaseConfigurationTest.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Person.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Address.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Phone.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/enumeration/PhoneType.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/repository/dynamodb/IPersonRepository.java" />
+        <option value="$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ListUtility.java" />
+        <option value="$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ReflectionUtility.java" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/ICrudRepository.java" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/ICrudController.java" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IPersonController.java" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" />
+        <option value="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/IPersonRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-api" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamodb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="contact-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="contact-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="contact-manager-database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="callahanwilliam" type="462c0819:PsiDirectoryNode" />
+              <item name="contactmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files (x86)/nodejs/node" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/node_modules/react-native-cli" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.32062256" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\William Callahan\git\trunk\contact-manager\contact-manager-common\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\William Callahan\git\trunk\contact-manager\contact-manager-api\src\test\resources" />
+      <recent name="C:\Users\William Callahan\git\trunk\contact-manager\contact-manager-database\src\test\resources" />
+      <recent name="C:\Users\William Callahan\git\trunk\contact-manager\contact-manager-common\src\main\resources" />
+      <recent name="C:\Users\William Callahan\git\trunk\contact-manager\contact-manager-api\src\test\java" />
+      <recent name="C:\Users\William Callahan\git\trunk\contact-manager\contact-manager-common\src\test\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PersonControllerTest">
+    <configuration name="DatabaseConfigurationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.callahanwilliam.contactmanager.configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="contact-manager-database" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.callahanwilliam.contactmanager.configuration" />
+      <option name="MAIN_CLASS_NAME" value="com.callahanwilliam.contactmanager.configuration.DatabaseConfigurationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="IPersonRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.callahanwilliam.contactmanager.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="contact-manager-database" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.callahanwilliam.contactmanager.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.callahanwilliam.contactmanager.repository.IPersonRepositoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="IPersonRepositoryTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.callahanwilliam.contactmanager.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="contact-manager-database" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.callahanwilliam.contactmanager.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.callahanwilliam.contactmanager.repository.IPersonRepositoryTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PersonControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.callahanwilliam.contactmanager.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="contact-manager-api" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.callahanwilliam.contactmanager.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.callahanwilliam.contactmanager.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PersonControllerTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.callahanwilliam.contactmanager.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="contact-manager-api" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.callahanwilliam.contactmanager.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.callahanwilliam.contactmanager.controller.PersonControllerTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.IPersonRepositoryTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IPersonRepositoryTest.testFindAll" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DatabaseConfigurationTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PersonControllerTest.findAllTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PersonControllerTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PersonControllerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.IPersonRepositoryTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DatabaseConfigurationTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PersonControllerTest.findAllTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.IPersonRepositoryTest.testFindAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37e2c373-50cb-4480-9685-543cae65997d" name="Default" comment="" />
+      <created>1513629799662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513629799662</updated>
+      <workItem from="1513629803873" duration="26033000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="IPersonRepositoryTest - 2017.12.19 at 00h 16m 19s.xml">
+      <configuration name="IPersonRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IPersonRepositoryTest - 2017.12.19 at 00h 17m 33s.xml">
+      <configuration name="IPersonRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 39m 39s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 42m 04s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 43m 34s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 44m 41s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 45m 10s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 46m 16s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.18 at 23h 46m 33s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonControllerTest - 2017.12.19 at 00h 19m 44s.xml">
+      <configuration name="PersonControllerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="26033000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47401908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="19" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="437" column="6" lean-forward="false" selection-start-line="437" selection-start-column="6" selection-end-line="437" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.4.RELEASE/spring-test-4.2.4.RELEASE.jar!/org/springframework/test/context/ActiveProfiles.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://SpringLocalModels/module=contact-manager-database">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SpringLocalModels</ID>
+          <OriginalElement>module=contact-manager-database</OriginalElement>
+          <nodes>
+            <node x="" y="">module=contact-manager-database</node>
+            <node x="" y="">fileset=contact-manager-database/DynamoDbConfiguration</node>
+            <node x="" y="">com.callahanwilliam.contactmanager.configuration.DynamoDbConfiguration</node>
+            <node x="" y="">org.socialsignin.spring.data.dynamodb.repository.config.EnableDynamoDBRepositories</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="453.5" y="10.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Show filesets as groups</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.4.RELEASE/spring-test-4.2.4.RELEASE.jar!/org/springframework/test/context/ContextConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.34/aws-java-sdk-dynamodb-1.11.34.jar!/com/amazonaws/services/dynamodbv2/AmazonDynamoDB.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/configuration/DynamoDbConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="29" column="58" lean-forward="false" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-releasetrain/Hopper-SR10/spring-data-releasetrain-Hopper-SR10.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.10.RELEASE/spring-data-commons-1.12.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-common/contact-manager-common.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.callahanwilliam:contact-manager:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.callahanwilliam:contact-manager:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.callahanwilliam:contact-manager:1.0-SNAPSHOT</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="62.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.callahanwilliam:contact-manager-api:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.callahanwilliam:contact-manager-api:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.callahanwilliam:contact-manager-api:1.0-SNAPSHOT</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-lambda-java-core:jar:1.1.0</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-kms:jar:1.11.13</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/org.apache.httpcomponents:httpclient:jar:4.5.2</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/org.apache.httpcomponents:httpclient:jar:4.5.2/org.apache.httpcomponents:httpcore:jar:4.4.4</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/org.apache.httpcomponents:httpclient:jar:4.5.2/commons-codec:commons-codec:jar:1.9</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/com.fasterxml.jackson.core:jackson-databind:jar:2.6.6</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/com.fasterxml.jackson.core:jackson-databind:jar:2.6.6/com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/com.fasterxml.jackson.core:jackson-databind:jar:2.6.6/com.fasterxml.jackson.core:jackson-core:jar:2.6.6</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.6.6</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.amazonaws:aws-java-sdk-s3:jar:1.11.13/com.amazonaws:aws-java-sdk-core:jar:1.11.13/joda-time:joda-time:jar:2.8.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/com.fasterxml.jackson.core:jackson-annotations:jar:2.7.5</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/log4j:log4j:jar:1.2.17</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.jersey.core:jersey-common:jar:2.23.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.jersey.core:jersey-common:jar:2.23.1/org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.23.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.jersey.core:jersey-common:jar:2.23.1/org.glassfish.hk2:osgi-resource-locator:jar:1.0.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.jersey.core:jersey-client:jar:2.23.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/javax.ws.rs:javax.ws.rs-api:jar:2.0.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.jersey.media:jersey-media-jaxb:jar:2.23.1</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/javax.annotation:javax.annotation-api:jar:1.2</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.hk2:hk2-api:jar:2.4.0-b34</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.hk2:hk2-api:jar:2.4.0-b34/org.glassfish.hk2:hk2-utils:jar:2.4.0-b34</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.hk2:hk2-api:jar:2.4.0-b34/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.4.0-b34</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.hk2.external:javax.inject:jar:2.4.0-b34</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/org.glassfish.hk2:hk2-locator:jar:2.4.0-b34/org.javassist:javassist:jar:3.18.1-GA</node>
+            <node x="" y="">org.lambadaframework:runtime:jar:0.0.6/org.lambadaframework:jax-rs-extractor:jar:0.0.6/org.glassfish.jersey.core:jersey-server:jar:2.23.1/javax.validation:validation-api:jar:1.1.0.Final</node>
+            <node x="" y="">com.amazonaws:aws-lambda-java-log4j:jar:1.0.0</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-aop:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-aop:jar:4.2.4.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-beans:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-core:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-core:jar:4.2.4.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-expression:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-aop:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-beans:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-context:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-core:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-web:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-web:jar:4.1.7.RELEASE/org.springframework:spring-aop:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-web:jar:4.1.7.RELEASE/org.springframework:spring-beans:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-web:jar:4.1.7.RELEASE/org.springframework:spring-context:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-web:jar:4.1.7.RELEASE/org.springframework:spring-core:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-webmvc:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-webmvc:jar:4.1.7.RELEASE/org.springframework:spring-beans:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-webmvc:jar:4.1.7.RELEASE/org.springframework:spring-context:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-webmvc:jar:4.1.7.RELEASE/org.springframework:spring-core:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.springframework:spring-webmvc:jar:4.1.7.RELEASE/org.springframework:spring-expression:jar:4.1.7.RELEASE</node>
+            <node x="" y="">org.springframework.hateoas:spring-hateoas:jar:0.21.0.RELEASE/org.slf4j:slf4j-api:jar:1.7.21</node>
+            <node x="" y="">com.callahanwilliam:contact-manager-common:jar:1.0-SNAPSHOT</node>
+            <node x="" y="">com.callahanwilliam:contact-manager-database:jar:1.0-SNAPSHOT</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.41384615384615386" x="965.0" y="743.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/contact-manager-api.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/rmi/log/LogOutputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.4.RELEASE/spring-test-4.2.4.RELEASE.jar!/org/springframework/test/web/servlet/result/MockMvcResultHandlers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1012#1013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/1.1.1/json-smart-1.1.1.jar!/net/minidev/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="94" column="21" lean-forward="false" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar!/org/apache/commons/collections4/IteratorUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="331" column="27" lean-forward="false" selection-start-line="331" selection-start-column="27" selection-end-line="331" selection-end-column="27" />
+          <folding>
+            <element signature="e#14558#14559#0" expanded="true" />
+            <element signature="e#14601#14602#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-common/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="68" column="21" lean-forward="false" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-353">
+          <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.34/aws-java-sdk-dynamodb-1.11.34.jar!/com/amazonaws/services/dynamodbv2/datamodeling/DynamoDBMapperFieldModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="87" column="36" lean-forward="false" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazonaws/aws-java-sdk-dynamodb/1.11.34/aws-java-sdk-dynamodb-1.11.34-sources.jar!/com/amazonaws/services/dynamodbv2/datamodeling/DynamoDBMapperFieldModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/enumeration/PhoneType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/dynamodb/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/configuration/DatabaseConfigurationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/hateoas/spring-hateoas/0.21.0.RELEASE/spring-hateoas-0.21.0.RELEASE.jar!/org/springframework/hateoas/Identifiable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/hateoas/spring-hateoas/0.21.0.RELEASE/spring-hateoas-0.21.0.RELEASE.jar!/org/springframework/hateoas/ResourceSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="1821" column="26" lean-forward="false" selection-start-line="1821" selection-start-column="26" selection-end-line="1821" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="474" column="0" lean-forward="false" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.7.RELEASE/spring-webmvc-4.1.7.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="977" column="22" lean-forward="false" selection-start-line="977" selection-start-column="22" selection-end-line="977" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ReflectionUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#764#794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-common/src/main/java/com/callahanwilliam/contactmanager/utility/ListUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.10.RELEASE/spring-data-commons-1.12.10.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="95" column="30" lean-forward="true" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/repository/dynamodb/IPersonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/hateoas/spring-hateoas/0.21.0.RELEASE/spring-hateoas-0.21.0.RELEASE-sources.jar!/org/springframework/hateoas/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/hateoas/spring-hateoas/0.21.0.RELEASE/spring-hateoas-0.21.0.RELEASE.jar!/org/springframework/hateoas/Resource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Void.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IPersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/IPersonRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8.0.51</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>contact-manager-database</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.32062256" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Artifact MetaData -->
+
+	<groupId>com.callahanwilliam</groupId>
+	<artifactId>contact-manager</artifactId>
+	<packaging>jar</packaging>
+	<version>${com.callahanwilliam.contactmanager}</version>
+	<contributors>
+		<contributor>
+			<name>William Callahan</name>
+			<url>http://callahanwilliam.com</url>
+		</contributor>
+	</contributors>
+
+	<!-- Child Modules -->
+
+	<modules>
+		<module>contact-manager-api</module>
+		<module>contact-manager-common</module>
+		<module>contact-manager-database</module>
+	</modules>
+
+	<!-- Global Properties -->
+
+	<properties>
+		<com.callahanwilliam.contactmanager>1.0-SNAPSHOT</com.callahanwilliam.contactmanager>
+		<com.amazonaws.log4j>1.0.0</com.amazonaws.log4j>
+		<com.amazonaws.dynamodo>1.11.34</com.amazonaws.dynamodo>
+		<com.github.derjust.dynamodb>4.2.3</com.github.derjust.dynamodb>
+		<lambda.version>0.0.6</lambda.version>
+		<spring.version>4.2.4.RELEASE</spring.version>
+	</properties>
+
+	<!-- Profiles -->
+
+	<profiles>
+		<profile>
+			<id>test</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>test</value>
+				</property>
+			</activation>
+			<properties>
+				<scope>test</scope>
+			</properties>
+		</profile>
+		<profile>
+			<id>development</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<scope>compile</scope>
+			</properties>
+		</profile>
+		<profile>
+			<id>production</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>production</value>
+				</property>
+			</activation>
+			<properties>
+				<scope>provided</scope>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencies>
+
+		<!-- region AWS Dependencies -->
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-dynamodb</artifactId>
+			<version>${com.amazonaws.dynamodo}</version>
+		</dependency>
+
+		<!-- endregion -->
+
+		<!-- region Various Dependencies -->
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+
+		<!-- endregion -->
+
+		<!-- region JUnit Dependencies -->
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>hamcrest-core</artifactId>
+					<groupId>org.hamcrest</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.25</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>0.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path-assert</artifactId>
+			<version>0.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- endregion -->
+
+	</dependencies>
+
+	<!-- Set Maven Version and JAVA Compile Target Version -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
