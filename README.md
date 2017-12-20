@@ -15,7 +15,7 @@ to the architecture. If a request fails, please attempt to make the request agai
 - [GET /persons/`{id}`][persons] - Gets a person by its `id` (NOTE: bug currently exists at endpoint for serialization mapping)
 - [POST /persons][persons] - Creates a new instance of a person
 - [PUT /persons-put/`{id}`][persons] - Updates an existing person with a matching `id`
-- [DELETE /persons-delete/`id`][persons] - Deletes a persons with a matching `id`
+- [DELETE /persons-delete/`{id}`][persons] - Deletes a persons with a matching `id`
 
 ### Sample Data
 
@@ -80,4 +80,4 @@ Ensure that you have the following dependencies installed on your system before 
 - Maven
 - Java 8
 
-[persons](https://k1nu70dya2.execute-api.us-east-1.amazonaws.com/prod/persons)
+[persons]: https://k1nu70dya2.execute-api.us-east-1.amazonaws.com/prod/persons
