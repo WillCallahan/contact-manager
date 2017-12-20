@@ -1,13 +1,11 @@
 package com.callahanwilliam.contactmanager.model.enumeration;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
  * Used to provide the type of phone that a {@link com.callahanwilliam.contactmanager.model.dynamodb.Phone} represents.
  */
-//@JsonFormat(shape = JsonFormat.Shape.NUMBER)
 public enum PhoneType {
 	
 	MOBILE(0, "Mobile"), LANDING(1, "Landing"), FAX(2, "FAX"), ANDROID(3, "Android"), IPHONE(1, "iPhone");
@@ -36,7 +34,7 @@ public enum PhoneType {
 			if (PhoneType.values()[i].getType() == type)
 				return PhoneType.values()[i];
 		}
-		throw new IllegalArgumentException("Phone Type " + type + "does not exist!");
+		throw new IllegalArgumentException("Phone Type " + type + " does not exist!");
 	}
 	
 }

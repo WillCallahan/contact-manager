@@ -14,8 +14,8 @@ to the architecture. If a request fails, please attempt to make the request agai
 - [GET /persons][persons] - Gets all instances of people in the database
 - [GET /persons/`{id}`][persons] - Gets a person by its `id` (NOTE: bug currently exists at endpoint for serialization mapping)
 - [POST /persons][persons] - Creates a new instance of a person
-- [PUT /persons-put/`{id}`][persons] - Updates an existing person with a matching `id`
-- [DELETE /persons-delete/`{id}`][persons] - Deletes a persons with a matching `id`
+- [PUT /persons/`{id}`][persons] - Updates an existing person with a matching `id`
+- [DELETE /persons/`{id}`][persons] - Deletes a persons with a matching `id`
 
 ### Sample Data
 

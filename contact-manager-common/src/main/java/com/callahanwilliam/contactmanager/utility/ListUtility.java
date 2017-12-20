@@ -36,7 +36,7 @@ public class ListUtility {
 			}
 			return encapsulationList;
 		} catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
-			log.error("Unable to encapsulate objects!");
+			log.error("Unable to encapsulate objects!", e);
 			return null;
 		}
 	}
