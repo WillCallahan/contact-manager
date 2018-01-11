@@ -54,7 +54,9 @@ public class PersonControllerTest {
 	
 	@Test
 	public void findAllTest() throws Exception {
-		mockMvc.perform(MockMvcRequestBuilders.get("/persons"))
+		mockMvc.perform(
+				MockMvcRequestBuilders.get("/persons")
+						.accept(MediaType.APPLICATION_JSON))
 				.andDo(MockMvcResultHandlers.print())
 				.andExpect(MockMvcResultMatchers.status().isOk());
 		Assert.notNull(iPersonRepository.findAll());
@@ -64,7 +66,9 @@ public class PersonControllerTest {
 	public void findOneTest() throws Exception {
 		Person person = iPersonRepository.save(PersonSeeder.getInstance());
 		Assert.notNull(person);
-		MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get("/persons/" + URLEncoder.encode(person.getId())))
+		MvcResult mvcResult = mockMvc.perform(
+				MockMvcRequestBuilders.get("/persons/" + URLEncoder.encode(person.getId()))
+						.accept(MediaType.APPLICATION_JSON))
 				.andDo(MockMvcResultHandlers.print())
 				.andExpect(MockMvcResultMatchers.status().isOk())
 				.andReturn();

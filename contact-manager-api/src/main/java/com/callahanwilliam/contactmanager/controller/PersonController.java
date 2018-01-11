@@ -26,7 +26,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	public Resource<Person> findOne(@PathVariable("id") String id) {
 		return new Resource<>(iPersonRepository.findOne(id));
@@ -35,7 +35,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
 	public Iterable findAll() {
 		return ListUtility.encapsulateObjects(iPersonRepository.findAll(), Resource.class);
@@ -44,7 +44,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(method = RequestMethod.POST)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Resource<Person> create(@RequestBody Person person) {
 		return new Resource<>(iPersonRepository.save(person));
@@ -53,7 +53,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	@ResponseStatus(HttpStatus.OK)
 	public Resource<Person> update(@PathVariable("id") String id, @RequestBody Person person) {
 		person.setId(id);
@@ -63,7 +63,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable("id") String id) {
 		iPersonRepository.delete(id);

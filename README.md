@@ -26,6 +26,7 @@ The following can be used as data to provide to the API
 | Header | Value |
 | :------: | :-----: |
 | Content-Type | application/json |
+| Accept | application/json |
 
 #### Request Body
 
@@ -63,7 +64,7 @@ The following is an example of the output from the API
 
 ## Building
 
-To build the project, type `mvn package -Denv=production -Dmaven.test.skip=true` into the CLI.
+To build the project, type `mvn package -Denv=production` into the CLI.
 
 ### Build Dependencies
 
