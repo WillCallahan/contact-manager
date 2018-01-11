@@ -6,10 +6,7 @@
     </list>
     <list default="true" id="37e2c373-50cb-4480-9685-543cae65997d" name="Default" comment="Correction to inability to serialize objects at specific endpoints">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/enumeration/PhoneType.java" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/enumeration/PhoneType.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1162,7 +1159,7 @@
       <workItem from="1513868165883" duration="10822000" />
       <workItem from="1515656262935" duration="286000" />
       <workItem from="1515656575503" duration="63000" />
-      <workItem from="1515656665338" duration="673000" />
+      <workItem from="1515656665338" duration="695000" />
     </task>
     <task id="LOCAL-00001" summary="Support for CRUD operations on available DMO through repositories and the API">
       <created>1513660991504</created>
@@ -1213,7 +1210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513801824722</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Correction to inability to serialize objects at specific endpoints">
+      <created>1515657360606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515657360606</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1249,7 +1253,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68894000" />
+    <option name="totallyTimeSpent" value="68916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1306,7 +1310,8 @@
     <MESSAGE value="Support for many Addresses and many Secondary Email Addresses, updated README" />
     <MESSAGE value="Corrections to README" />
     <MESSAGE value="Minor corrections in documentation and error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor corrections in documentation and error handling" />
+    <MESSAGE value="Correction to inability to serialize objects at specific endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction to inability to serialize objects at specific endpoints" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

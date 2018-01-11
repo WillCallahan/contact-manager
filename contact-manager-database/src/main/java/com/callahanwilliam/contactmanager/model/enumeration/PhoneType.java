@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum PhoneType {
 	
-	MOBILE(0, "Mobile"), LANDING(1, "Landing"), FAX(2, "FAX"), ANDROID(3, "Android"), IPHONE(1, "iPhone");
+	MOBILE(0, "Mobile"), LANDING(1, "Landing"), FAX(2, "FAX"), ANDROID(3, "Android"), IPHONE(4, "iPhone");
 	
 	private int type;
 	
