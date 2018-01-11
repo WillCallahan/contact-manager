@@ -110,7 +110,7 @@ public class PersonControllerTest {
 						.accept(MediaType.APPLICATION_JSON)
 						.contentType(MediaType.APPLICATION_JSON).content(PersonSeeder.getAsJson()))
 				.andDo(MockMvcResultHandlers.print())
-				.andExpect(MockMvcResultMatchers.status().isOk());
+				.andExpect(MockMvcResultMatchers.status().isNoContent());
 		Assert.isNull(iPersonRepository.findOne(person.getId()));
 	}
 	

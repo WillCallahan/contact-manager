@@ -6,6 +6,7 @@ import com.callahanwilliam.contactmanager.utility.ListUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -25,7 +26,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Resource<Person> findOne(@PathVariable("id") String id) {
 		return new Resource<>(iPersonRepository.findOne(id));
@@ -34,7 +35,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Iterable findAll() {
 		return ListUtility.encapsulateObjects(iPersonRepository.findAll(), Resource.class);
@@ -43,7 +44,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(method = RequestMethod.POST)
+	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Resource<Person> create(@RequestBody Person person) {
 		return new Resource<>(iPersonRepository.save(person));
@@ -52,7 +53,7 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Resource<Person> update(@PathVariable("id") String id, @RequestBody Person person) {
 		person.setId(id);
@@ -62,7 +63,8 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
-	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable("id") String id) {
 		iPersonRepository.delete(id);
 	}
