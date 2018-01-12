@@ -7,10 +7,6 @@
     <list default="true" id="37e2c373-50cb-4480-9685-543cae65997d" name="Default" comment="Support multiple MediaTypes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" afterPath="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/PersonRepositoryTest.java" afterPath="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/PersonRepositoryTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1172,7 +1168,7 @@
       <workItem from="1515656262935" duration="286000" />
       <workItem from="1515656575503" duration="63000" />
       <workItem from="1515656665338" duration="2108000" />
-      <workItem from="1515720777033" duration="2054000" />
+      <workItem from="1515720777033" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="Support for CRUD operations on available DMO through repositories and the API">
       <created>1513660991504</created>
@@ -1244,7 +1240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515657828495</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added count endpoint to Person API">
+      <created>1515733285695</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1515733285696</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1280,7 +1283,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72383000" />
+    <option name="totallyTimeSpent" value="72425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1340,7 +1343,8 @@
     <MESSAGE value="Correction to inability to serialize objects at specific endpoints" />
     <MESSAGE value="Minor bug fixes" />
     <MESSAGE value="Support multiple MediaTypes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Support multiple MediaTypes" />
+    <MESSAGE value="Added count endpoint to Person API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added count endpoint to Person API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

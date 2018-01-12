@@ -12,7 +12,7 @@ to the architecture. If a request fails, please attempt to make the request agai
 ## Operations
 
 - [GET /persons][persons] - Gets all instances of people in the database
-- [GET /persons/`{id}`][persons] - Gets a person by its `id` (NOTE: bug currently exists at endpoint for serialization mapping)
+- [GET /persons/`{id}`][persons] - Gets a person by its `id`
 - [POST /persons][persons] - Creates a new instance of a person
 - [PUT /persons/`{id}`][persons] - Updates an existing person with a matching `id`
 - [DELETE /persons/`{id}`][persons] - Deletes a persons with a matching `id`
@@ -36,10 +36,10 @@ The following can be used as data to provide to the API
 	"firstName": "Jane",
 	"lastName": "Doe",
 	"primaryEmail": "callahan043@connect.wcsu.edu",
-	"secondaryEmails": [
+	"secondaryEmailList": [
 		"callahanwilliam@callahanwilliam.com"
 	],
-	"addresses": [
+	"addressList": [
 		{
 			"street": "A Street",
 			"city": "A Town Somewhere",
