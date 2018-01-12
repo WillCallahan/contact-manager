@@ -76,6 +76,19 @@ public class PersonControllerTest {
 	}
 	
 	@Test
+	public void countTest() throws Exception {
+		Person person = iPersonRepository.save(PersonSeeder.getInstance());
+		Assert.notNull(person);
+		MvcResult mvcResult = mockMvc.perform(
+				MockMvcRequestBuilders.get("/persons/count")
+						.accept(MediaType.APPLICATION_JSON))
+				.andDo(MockMvcResultHandlers.print())
+				.andExpect(MockMvcResultMatchers.status().isOk())
+				.andReturn();
+		Assert.isTrue(mvcResult.getResponse().getContentAsString().matches("\\{\"content\":\\d+,\"links\":\\[.*?]}"));
+	}
+	
+	@Test
 	public void createTest() throws Exception {
 		long startingCount = iPersonRepository.count();
 		mockMvc.perform(

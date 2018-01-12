@@ -6,7 +6,6 @@ import com.callahanwilliam.contactmanager.utility.ListUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -28,6 +27,7 @@ public class PersonController implements IPersonController {
 	 */
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
+	@Override
 	public Resource<Person> findOne(@PathVariable("id") String id) {
 		return new Resource<>(iPersonRepository.findOne(id));
 	}
@@ -37,6 +37,7 @@ public class PersonController implements IPersonController {
 	 */
 	@RequestMapping(method = RequestMethod.GET)
 	@ResponseStatus(HttpStatus.OK)
+	@Override
 	public Iterable findAll() {
 		return ListUtility.encapsulateObjects(iPersonRepository.findAll(), Resource.class);
 	}
@@ -44,8 +45,18 @@ public class PersonController implements IPersonController {
 	/**
 	 * {@inheritDoc}
 	 */
+	@RequestMapping(value = "/count", method = RequestMethod.GET)
+	@ResponseStatus(HttpStatus.OK)
+	public Resource<Number> count() {
+		return new Resource<>(iPersonRepository.count());
+	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
 	@RequestMapping(method = RequestMethod.POST)
 	@ResponseStatus(HttpStatus.CREATED)
+	@Override
 	public Resource<Person> create(@RequestBody Person person) {
 		return new Resource<>(iPersonRepository.save(person));
 	}
@@ -55,6 +66,7 @@ public class PersonController implements IPersonController {
 	 */
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
 	@ResponseStatus(HttpStatus.OK)
+	@Override
 	public Resource<Person> update(@PathVariable("id") String id, @RequestBody Person person) {
 		person.setId(id);
 		return new Resource<>(iPersonRepository.save(person));
@@ -65,6 +77,7 @@ public class PersonController implements IPersonController {
 	 */
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.NO_CONTENT)
+	@Override
 	public void delete(@PathVariable("id") String id) {
 		iPersonRepository.delete(id);
 	}

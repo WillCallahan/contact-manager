@@ -26,6 +26,13 @@ public interface IResourceCrudController<T, ID> {
 	Resource<T> findOne(ID id);
 	
 	/**
+	 * Gets the total count of the object
+	 *
+	 * @return Total number of objects
+	 */
+	Resource<Number> count();
+	
+	/**
 	 * Creates a new instance of an object
 	 *
 	 * @param type Object to create

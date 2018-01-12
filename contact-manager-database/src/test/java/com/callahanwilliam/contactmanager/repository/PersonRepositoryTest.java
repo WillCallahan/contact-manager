@@ -42,6 +42,13 @@ public class PersonRepositoryTest {
 	}
 	
 	@Test
+	public void countTest() {
+		log.info("Counting all objects");
+		iPersonRepository.save(PersonSeeder.getInstance());
+		Assert.isTrue(iPersonRepository.count() > 0);
+	}
+	
+	@Test
 	public void saveTest() {
 		log.info("Saving a new Person");
 		Person person = iPersonRepository.save(PersonSeeder.getInstance());
