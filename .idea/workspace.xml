@@ -4,7 +4,7 @@
     <list id="310e6a9d-96ce-40e8-9493-06aae86bc601" name="LocalChanges" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/configuration/DynamoDbConfiguration.java" afterPath="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/configuration/DynamoDbConfiguration.java" />
     </list>
-    <list default="true" id="37e2c373-50cb-4480-9685-543cae65997d" name="Default" comment="Support multiple MediaTypes">
+    <list default="true" id="37e2c373-50cb-4480-9685-543cae65997d" name="Default" comment="Added count endpoint to documentation">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -79,11 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PersonControllerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PersonControllerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+            <state relative-caret-position="391">
+              <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -123,15 +123,15 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="544">
-                <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+              <first_editor relative-caret-position="352">
+                <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
                 <folding>
-                  <marker date="1515722035087" expanded="true" signature="943:1336" ph="{&quot;id&quot;: null...}" />
-                  <marker date="1515722035087" expanded="true" signature="1072:1116" ph="[...]" />
-                  <marker date="1515722035087" expanded="true" signature="1134:1254" ph="[...]" />
-                  <marker date="1515722035087" expanded="true" signature="1138:1251" ph="{&quot;street&quot;: &quot;A Street&quot;...}" />
-                  <marker date="1515722035087" expanded="true" signature="1270:1334" ph="[...]" />
-                  <marker date="1515722035087" expanded="true" signature="1274:1331" ph="{&quot;phoneNumber&quot;: &quot;012-345-6789&quot;...}" />
+                  <marker date="1515733378522" expanded="true" signature="1035:1428" ph="{&quot;id&quot;: null...}" />
+                  <marker date="1515733378522" expanded="true" signature="1164:1208" ph="[...]" />
+                  <marker date="1515733378522" expanded="true" signature="1226:1346" ph="[...]" />
+                  <marker date="1515733378522" expanded="true" signature="1230:1343" ph="{&quot;street&quot;: &quot;A Street&quot;...}" />
+                  <marker date="1515733378522" expanded="true" signature="1362:1426" ph="[...]" />
+                  <marker date="1515733378522" expanded="true" signature="1366:1423" ph="{&quot;phoneNumber&quot;: &quot;012-345-6789&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -181,11 +181,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PersonController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+            <state relative-caret-position="170">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1457#1458#0" expanded="true" />
@@ -285,11 +285,11 @@
         <option value="$PROJECT_DIR$/contact-manager-api/pom.xml" />
         <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/configuration/SpringConfiguration.java" />
         <option value="$PROJECT_DIR$/contact-manager-database/src/main/java/com/callahanwilliam/contactmanager/model/enumeration/PhoneType.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IResourceCrudController.java" />
         <option value="$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java" />
         <option value="$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java" />
         <option value="$PROJECT_DIR$/contact-manager-database/src/test/java/com/callahanwilliam/contactmanager/repository/PersonRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1168,7 +1168,7 @@
       <workItem from="1515656262935" duration="286000" />
       <workItem from="1515656575503" duration="63000" />
       <workItem from="1515656665338" duration="2108000" />
-      <workItem from="1515720777033" duration="2096000" />
+      <workItem from="1515720777033" duration="2230000" />
     </task>
     <task id="LOCAL-00001" summary="Support for CRUD operations on available DMO through repositories and the API">
       <created>1513660991504</created>
@@ -1247,7 +1247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515733285696</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated documentation">
+      <created>1515733296076</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1515733296077</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1283,7 +1290,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72425000" />
+    <option name="totallyTimeSpent" value="72559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1306,10 +1313,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36055142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36055142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45066124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44962883" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1344,7 +1351,8 @@
     <MESSAGE value="Minor bug fixes" />
     <MESSAGE value="Support multiple MediaTypes" />
     <MESSAGE value="Added count endpoint to Person API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added count endpoint to Person API" />
+    <MESSAGE value="Updated documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1660,24 +1668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="544">
-            <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-            <folding>
-              <marker date="1515722035087" expanded="true" signature="943:1336" ph="{&quot;id&quot;: null...}" />
-              <marker date="1515722035087" expanded="true" signature="1072:1116" ph="[...]" />
-              <marker date="1515722035087" expanded="true" signature="1134:1254" ph="[...]" />
-              <marker date="1515722035087" expanded="true" signature="1138:1251" ph="{&quot;street&quot;: &quot;A Street&quot;...}" />
-              <marker date="1515722035087" expanded="true" signature="1270:1334" ph="[...]" />
-              <marker date="1515722035087" expanded="true" signature="1274:1331" ph="{&quot;phoneNumber&quot;: &quot;012-345-6789&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/IPersonController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1736,23 +1726,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="352">
+            <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+            <folding>
+              <marker date="1515733378522" expanded="true" signature="1035:1428" ph="{&quot;id&quot;: null...}" />
+              <marker date="1515733378522" expanded="true" signature="1164:1208" ph="[...]" />
+              <marker date="1515733378522" expanded="true" signature="1226:1346" ph="[...]" />
+              <marker date="1515733378522" expanded="true" signature="1230:1343" ph="{&quot;street&quot;: &quot;A Street&quot;...}" />
+              <marker date="1515733378522" expanded="true" signature="1362:1426" ph="[...]" />
+              <marker date="1515733378522" expanded="true" signature="1366:1423" ph="{&quot;phoneNumber&quot;: &quot;012-345-6789&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contact-manager-api/src/main/java/com/callahanwilliam/contactmanager/controller/PersonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="47" column="35" lean-forward="false" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1457#1458#0" expanded="true" />
             <element signature="e#1512#1513#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact-manager-api/src/test/java/com/callahanwilliam/contactmanager/controller/PersonControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="89" column="4" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
